@@ -8,15 +8,16 @@ export default function Home() {
         <div className="container-content">
           <div className="max-w-2xl">
             <p className="text-[#00693e] font-semibold text-sm uppercase tracking-widest mb-4">
-              Lebanon, NH &nbsp;·&nbsp; Serving the Upper Valley
+              Lebanon, NH &nbsp;·&nbsp; Upper Valley &nbsp;·&nbsp; Richmond, VA
             </p>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-              Custom Screen Printing &amp; Embroidery Since 1987
+              Custom Apparel That Shows Up On Time — And Actually Looks Good
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Serving schools, teams, businesses, and community organizations
-              across the Upper Valley — New Hampshire and Vermont — with
-              dependable service and quality work done right.
+              Screen printing, embroidery, and on-site event apparel and vending
+              for local businesses, organizations, teams, schools, rec
+              departments, clubs, tournaments, and community events across the
+              Upper Valley and Richmond, VA.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="btn-primary text-center">
@@ -34,14 +35,13 @@ export default function Home() {
       <section className="bg-[#00693e] py-5">
         <div className="container-content">
           <p className="text-white text-center text-sm md:text-base font-medium tracking-wide">
-            Schools &nbsp;·&nbsp; Rec Departments &nbsp;·&nbsp; Athletic Teams
-            &nbsp;·&nbsp; Businesses &nbsp;·&nbsp; Farms &nbsp;·&nbsp; Community
-            Events
+            Trusted by local businesses, schools, rec departments, and community
+            organizations
           </p>
         </div>
       </section>
 
-      {/* ── SERVICES ── */}
+      {/* ── WHAT WE DO ── */}
       <section className="section bg-white">
         <div className="container-content">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">
@@ -99,28 +99,27 @@ export default function Home() {
           </div>
 
           {/* Events — full-width feature card */}
-          <div className="border border-[#00693e] rounded-lg p-8 bg-[#f4fbf7]">
+          <div className="border-2 border-[#00693e] rounded-lg p-8 bg-[#f4fbf7]">
             <div className="inline-block bg-[#00693e] text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded mb-4">
               On-Site Events
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">
-              Events &amp; On-Site Apparel
+              Event Apparel &amp; On-Site Vending
             </h3>
             <p className="text-gray-600 leading-relaxed mb-6 max-w-2xl">
               We show up to your event as a vendor — pre-printed apparel stocked
-              and ready to go, with live on-site customization including names
-              and numbers for kids. Tournaments, festivals, school events, and
-              community gatherings all benefit from having a real merch setup
-              on-site rather than a generic bulk order.
+              and ready, with live on-site customization including names and
+              numbers for kids. No leftover boxes of shirts in the wrong sizes.
+              Just a professional setup that makes your event better.
             </p>
             <Link href="/event-merch" className="btn-primary text-sm">
-              Learn About Event Merch
+              Learn About Event Apparel
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── EVENT FEATURE ── */}
+      {/* ── TURN YOUR EVENT INTO AN EXPERIENCE ── */}
       <section className="section bg-gray-50 border-y border-gray-200">
         <div className="container-content">
           <div className="max-w-2xl">
@@ -128,22 +127,73 @@ export default function Home() {
               On-Site Personalization
             </p>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Hosting a Tournament or Large Event?
+              Turn Your Event Into an Experience
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We pre-print your event apparel and bring a professional setup to
-              personalize names and numbers live — so attendees walk away with
-              something truly theirs.
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              We pre-print your event apparel and bring a professional vendor
+              setup directly to your event. Attendees pick their size. Kids get
+              their name or number added right there. Everyone walks away with
+              something they&apos;ll actually wear.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-8">
+              It works for tournaments, school events, festivals, fundraisers,
+              and community gatherings — and we can arrange a revenue share so
+              organizers benefit too.
             </p>
             <Link href="/event-merch" className="btn-primary">
-              Learn About Event Merch
+              Learn About Event Apparel
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── ABOUT PREVIEW ── */}
+      {/* ── SERVICE AREAS ── */}
       <section className="section bg-white">
+        <div className="container-content">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">
+            Serving the Upper Valley and Richmond, VA
+          </h2>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <h3 className="font-bold text-gray-900 text-lg mb-3">
+                Upper Valley — New Hampshire &amp; Vermont
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                Based in Lebanon, NH, we&apos;ve served the Upper Valley for
+                nearly 40 years — working with businesses, schools, athletic
+                teams, rec departments, and community organizations across both
+                sides of the river.
+              </p>
+              <p className="text-sm text-gray-500">
+                Lebanon &middot; Hanover &middot; West Lebanon &middot;
+                Claremont &middot; Newport &middot; Enfield &middot; White River
+                Junction &middot; Woodstock &middot; Norwich &middot; Bradford
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold text-gray-900 text-lg mb-3">
+                Richmond, Virginia
+              </h3>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                We travel to the Richmond, VA area for events — bringing the
+                same on-site event apparel and vending service we&apos;ve
+                provided in New England for decades. If you&apos;re organizing a
+                tournament, festival, or community event in Richmond, we want to
+                talk.
+              </p>
+              <Link
+                href="/richmond-va"
+                className="text-[#00693e] font-semibold hover:underline"
+              >
+                Richmond, VA event services &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ABOUT PREVIEW ── */}
+      <section className="section bg-gray-50 border-y border-gray-200">
         <div className="container-content">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -171,7 +221,9 @@ export default function Home() {
           <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4">
             Find Us
           </p>
-          <p className="text-gray-700 font-medium mb-4">Lebanon, New Hampshire</p>
+          <p className="text-gray-700 font-medium mb-4">
+            Lebanon, New Hampshire
+          </p>
           <div className="rounded-lg overflow-hidden border border-gray-200">
             <iframe
               src="https://maps.google.com/maps?q=Lebanon,+NH+03766&output=embed"
@@ -227,7 +279,7 @@ export default function Home() {
       <section className="section bg-white border-t border-gray-100">
         <div className="container-content text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Get Started?
+            Let&apos;s Get Your Order Started
           </h2>
           <p className="text-gray-600 mb-8 max-w-md mx-auto">
             Reach out and we&apos;ll get back to you quickly. No pressure, no

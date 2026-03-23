@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services | Big Green T's",
   description:
-    "Custom screen printing and embroidery in Lebanon, NH. Serving the Upper Valley — New Hampshire and Vermont — since 1987.",
+    "Custom screen printing, embroidery, and on-site event apparel in Lebanon, NH. Serving the Upper Valley and Richmond, VA since 1987.",
 };
 
 export default function ServicesPage() {
@@ -20,9 +20,8 @@ export default function ServicesPage() {
             Services
           </h1>
           <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
-            We keep it straightforward. Three core services, done well — for
-            every kind of group, organization, and business across the Upper
-            Valley and beyond.
+            Three core services, done well — for businesses, organizations,
+            teams, and events across the Upper Valley and Richmond, VA.
           </p>
         </div>
       </section>
@@ -40,8 +39,8 @@ export default function ServicesPage() {
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
               Screen printing is what we&apos;ve built our reputation on for
               nearly 40 years. It&apos;s the most cost-effective method for
-              larger quantities, produces vibrant and durable results, and
-              works on virtually any garment type.
+              larger quantities, produces vibrant and durable results, and works
+              on virtually any garment type.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mb-10">
@@ -141,9 +140,7 @@ export default function ServicesPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-3">
-                  Best for
-                </h3>
+                <h3 className="font-semibold text-gray-900 mb-3">Best for</h3>
                 <ul className="space-y-2 text-gray-600 text-sm">
                   {[
                     "Corporate and business branding",
@@ -169,22 +166,27 @@ export default function ServicesPage() {
       {/* ── DIVIDER ── */}
       <div className="border-t border-gray-200" />
 
-      {/* ── EVENTS ── */}
-      <section className="section bg-white">
+      {/* ── EVENT APPAREL & VENDING ── */}
+      <section className="section bg-[#f4fbf7] border-y-2 border-[#00693e]">
         <div className="container-content">
           <div className="max-w-3xl">
-            <div className="inline-block bg-[#e8f5ee] text-[#00693e] text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded mb-4">
+            <div className="inline-block bg-[#00693e] text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded mb-4">
               On-Site Service
             </div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Events &amp; On-Site Apparel
+              Event Apparel &amp; On-Site Vending
             </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-4">
+              This is what sets us apart. Beyond print-and-ship orders, we offer
+              a full on-site event vending service — we pre-print your custom
+              apparel, show up to your event, and sell or distribute shirts
+              directly to attendees with live personalization on the spot.
+            </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              Beyond print-and-ship orders, we offer a full on-site event
-              merchandising service. We pre-print your apparel in advance and
-              show up to your event as a vendor — stocked, set up, and ready to
-              personalize shirts for attendees on the spot, including adding
-              names and numbers for kids.
+              Kids get their name or number added right there. No leftover
+              inventory. No generic bulk order that nobody asked for. Just a
+              professional vendor presence that makes your event more memorable
+              — and easier to manage.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-8 mb-10">
@@ -216,6 +218,7 @@ export default function ServicesPage() {
                     "Town festivals and fairs",
                     "Running races and athletic events",
                     "Corporate outings",
+                    "Community events",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <span className="text-[#00693e]">–</span> {item}
@@ -226,14 +229,14 @@ export default function ServicesPage() {
             </div>
 
             <Link href="/event-merch" className="btn-primary">
-              Learn More About Event Merch
+              Learn More About Event Apparel
             </Link>
           </div>
         </div>
       </section>
 
       {/* ── BOTTOM CTA ── */}
-      <section className="section bg-gray-50 border-t border-gray-200">
+      <section className="section bg-white border-t border-gray-200">
         <div className="container-content text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Not Sure Which Is Right for You?

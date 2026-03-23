@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About | Big Green T's",
   description:
-    "Family-owned custom screen printing and embroidery in Lebanon, NH since 1987. Serving the Upper Valley — New Hampshire and Vermont — for nearly 40 years.",
+    "Family-owned custom screen printing and embroidery in Lebanon, NH since 1987. Everything done in-house — no outsourcing, no middlemen. Serving the Upper Valley and Richmond, VA.",
 };
 
 export default function AboutPage() {
@@ -36,11 +36,11 @@ export default function AboutPage() {
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Big Green T&apos;s has been part of the Upper Valley community
-                since 1987. Based in Lebanon, NH, what started as a small
-                custom printing operation has grown into one of the most trusted
-                names in custom apparel in the region — serving schools, sports
-                teams, businesses, and community organizations across New
-                Hampshire and Vermont for nearly 40 years.
+                since 1987. Based in Lebanon, NH, what started as a small custom
+                printing operation has grown into one of the most trusted names
+                in custom apparel in the region — serving schools, sports teams,
+                businesses, and community organizations across New Hampshire and
+                Vermont for nearly 40 years.
               </p>
             </div>
 
@@ -50,9 +50,9 @@ export default function AboutPage() {
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
                 Our name comes from our roots near Dartmouth College — and the
-                green that&apos;s woven through everything we do. The
-                connection to that community shaped how we think about work:
-                do it well, stand behind it, and build something lasting.
+                green that&apos;s woven through everything we do. The connection
+                to that community shaped how we think about work: do it well,
+                stand behind it, and build something lasting.
               </p>
             </div>
 
@@ -61,11 +61,11 @@ export default function AboutPage() {
                 Family-Owned, Relationship-Driven
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We&apos;re a family business, and that matters. We&apos;re
-                not a large print company with a ticket number and a call
-                center. When you work with us, you talk to people who care
-                about getting your order right — and who want to still be
-                working with you ten years from now.
+                We&apos;re a family business, and that matters. We&apos;re not a
+                large print company with a ticket number and a call center. When
+                you work with us, you talk to people who care about getting your
+                order right — and who want to still be working with you ten years
+                from now.
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mt-4">
                 Many of our customers have been coming back for decades. That
@@ -77,14 +77,27 @@ export default function AboutPage() {
 
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">
+                Everything Done In-House
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                We don&apos;t outsource. Every order is printed or embroidered
+                by our team — which means we control the quality, the timeline,
+                and the result. When something needs to be fixed, we fix it.
+                There&apos;s no third party to blame and no middleman slowing
+                things down.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 How We Work
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We keep things simple. You tell us what you need, we give you
-                a straight answer on cost and timeline, and we get it done.
-                No surprises, no runaround. We review a proof with you before
-                anything is printed, and we don&apos;t consider a job done
-                until you&apos;re satisfied with the result.
+                We keep things simple. You tell us what you need, we give you a
+                straight answer on cost and timeline, and we get it done. No
+                surprises, no runaround. We review a proof with you before
+                anything is printed, and we don&apos;t consider a job done until
+                you&apos;re satisfied with the result.
               </p>
             </div>
           </div>
@@ -97,7 +110,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-10 text-center">
             What We Stand For
           </h2>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-4 gap-10">
             {[
               {
                 heading: "Dependability",
@@ -109,7 +122,11 @@ export default function AboutPage() {
               },
               {
                 heading: "Quality Work",
-                body: "Every order gets the same attention. Small or large, first-time customer or longtime account.",
+                body: "Every order gets the same attention — small or large, first-time customer or longtime account.",
+              },
+              {
+                heading: "No Outsourcing",
+                body: "We do everything in-house. You get our work, our standards, and direct accountability.",
               },
             ].map(({ heading, body }) => (
               <div key={heading}>
