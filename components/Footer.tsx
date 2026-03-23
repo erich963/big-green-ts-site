@@ -13,9 +13,9 @@ export default function Footer() {
             <p className="text-sm text-gray-400 leading-relaxed">
               Custom Screen Printing &amp; Embroidery
               <br />
-              Lebanon, NH &middot; Est. 1987
+              Lebanon, NH &middot; Richmond, VA
               <br />
-              Serving the Upper Valley
+              Outfitting the Upper Valley and beyond since 1987.
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/services", label: "Services" },
-                { href: "/event-merch", label: "Event Merch" },
+                { href: "/event-merch", label: "Events" },
                 { href: "/richmond-va", label: "Richmond, VA" },
                 { href: "/about", label: "About" },
                 { href: "/contact", label: "Contact" },
@@ -49,10 +49,10 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="tel:+16035551234"
+                  href="tel:+16034485261"
                   className="hover:text-white transition-colors"
                 >
-                  (603) 555-1234
+                  (603) 448-5261
                 </a>
               </li>
               <li>
@@ -63,6 +63,11 @@ export default function Footer() {
                   info@biggreents.com
                 </a>
               </li>
+              <li className="text-gray-500 pt-1">
+                85 Mechanic Street
+                <br />
+                Lebanon, NH 03766
+              </li>
             </ul>
             <div className="mt-4">
               <Link href="/contact" className="btn-primary text-sm py-2 px-4">
@@ -72,7 +77,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-gray-700 text-sm text-gray-500">
+        {/* Map */}
+        <div className="mt-10 rounded-lg overflow-hidden border border-gray-700">
+          <iframe
+            src="https://maps.google.com/maps?q=85+Mechanic+Street,+Lebanon,+NH+03766&output=embed"
+            width="100%"
+            height="280"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Big Green T's — 85 Mechanic Street, Lebanon, NH"
+          />
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-gray-700 text-sm text-gray-500">
           &copy; {new Date().getFullYear()} Big Green T&apos;s. All rights
           reserved.
         </div>
