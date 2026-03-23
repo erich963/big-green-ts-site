@@ -35,9 +35,9 @@ export default function Home() {
       <section className="bg-[#00693e] py-5">
         <div className="container-content">
           <p className="text-white text-center text-sm md:text-base font-medium tracking-wide">
-            Schools &nbsp;·&nbsp; Rec Departments &nbsp;·&nbsp; Athletic Teams
-            &nbsp;·&nbsp; Businesses &nbsp;·&nbsp; Farms &nbsp;·&nbsp; Community
-            Events
+            Businesses &nbsp;·&nbsp; Organizations &nbsp;·&nbsp; Schools
+            &nbsp;·&nbsp; Sport Teams &nbsp;·&nbsp; Rec Departments
+            &nbsp;·&nbsp; Events
           </p>
         </div>
       </section>
@@ -160,7 +160,10 @@ export default function Home() {
                 body: "We produce your order and get it to you on time, every time.",
               },
             ].map(({ step, heading, body }) => (
-              <div key={step} className="text-center">
+              <div
+                key={step}
+                className="text-center bg-white/10 border border-white/20 rounded-xl p-8"
+              >
                 <div className="w-12 h-12 rounded-full bg-white text-[#00693e] font-bold text-xl flex items-center justify-center mx-auto mb-4">
                   {step}
                 </div>
@@ -189,6 +192,30 @@ export default function Home() {
             <Link href="/event-merch" className="btn-outline">
               Book an Event
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── MAP ── */}
+      <section className="bg-gray-100 border-t border-gray-200">
+        <div className="container-content py-10">
+          <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">
+            Find Us
+          </p>
+          <p className="text-gray-700 font-medium mb-4">
+            85 Mechanic Street, Lebanon, NH 03766
+          </p>
+          <div className="rounded-lg overflow-hidden border border-gray-200">
+            <iframe
+              src="https://maps.google.com/maps?q=85+Mechanic+Street,+Lebanon,+NH+03766&output=embed"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Big Green T's — 85 Mechanic Street, Lebanon, NH"
+            />
           </div>
         </div>
       </section>

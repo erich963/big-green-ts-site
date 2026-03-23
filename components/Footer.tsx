@@ -77,21 +77,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Map */}
-        <div className="mt-10 rounded-lg overflow-hidden border border-gray-700">
-          <iframe
-            src="https://maps.google.com/maps?q=85+Mechanic+Street,+Lebanon,+NH+03766&output=embed"
-            width="100%"
-            height="280"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Big Green T's — 85 Mechanic Street, Lebanon, NH"
-          />
-        </div>
-
-        <div className="mt-6 pt-6 border-t border-gray-700 text-sm text-gray-500">
+        <div className="mt-10 pt-6 border-t border-gray-700 text-sm text-gray-500">
           &copy; {new Date().getFullYear()} Big Green T&apos;s. All rights
           reserved.
         </div>
