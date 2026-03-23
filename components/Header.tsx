@@ -17,15 +17,15 @@ export default function Header() {
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-      <div className="container-content flex items-center justify-between h-20">
+      <div className="container-content flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <Image
             src="/logo.png"
             alt="Big Green T's"
-            width={180}
-            height={60}
-            className="h-14 w-auto"
+            width={140}
+            height={48}
+            className="h-10 w-auto"
             priority
           />
         </Link>

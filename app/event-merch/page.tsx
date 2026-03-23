@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Event Apparel & On-Site Vending | Big Green T's",
+  title: "Event Merch | Big Green T's",
   description:
-    "We show up to your event with pre-printed apparel and personalize shirts on the spot — names, numbers, and more. Serving the Upper Valley and Richmond, VA.",
+    "On-site event merchandising and live personalization for tournaments, festivals, and large events across the Upper Valley — New Hampshire and Vermont.",
 };
 
 export default function EventMerchPage() {
@@ -16,29 +16,28 @@ export default function EventMerchPage() {
     "Town festivals and community gatherings",
     "Corporate outings and team-building events",
     "Fairs and agricultural events",
-    "Charity events and awareness walks",
   ];
 
   const steps = [
     {
       step: "1",
-      heading: "Tell Us About Your Event",
-      body: "Reach out early. We'll talk through your event, expected attendance, shirt styles, and design. The more lead time we have, the better.",
+      heading: "Plan Your Event",
+      body: "Contact us early. We&apos;ll talk through your event, expected attendance, and what apparel makes sense.",
     },
     {
       step: "2",
-      heading: "We Pre-Print Your Apparel",
-      body: "All event shirts are produced in advance — printed, sorted by size, and ready before your event day. No scrambling the morning of.",
+      heading: "Pre-Print Your Apparel",
+      body: "We produce all of your event apparel in advance — shirts, hoodies, whatever your event calls for.",
     },
     {
       step: "3",
       heading: "We Show Up",
-      body: "Our team arrives with a full vendor setup: apparel stocked, equipment ready, and everything organized so we're not in your way.",
+      body: "Our team brings a full professional setup to your event location and gets everything ready before attendees arrive.",
     },
     {
       step: "4",
-      heading: "Live Personalization On-Site",
-      body: "Attendees pick their size and we add names, numbers, or other personalization right there — including for kids. Fast, clean, and professional.",
+      heading: "Live Personalization",
+      body: "Attendees choose their size and we add names, numbers, or any personalization on the spot.",
     },
   ];
 
@@ -48,42 +47,37 @@ export default function EventMerchPage() {
       <section className="section bg-white border-b border-gray-100">
         <div className="container-content">
           <p className="text-[#00693e] font-semibold text-sm uppercase tracking-widest mb-3">
-            A Better Way to Do Event Shirts
+            A Cut Above the Standard Order
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Event Apparel &amp; On-Site Vending
+            On-Site Event Merch &amp; Personalization
           </h1>
           <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
-            We pre-print your event apparel and show up as a vendor — so
-            attendees get fitted, personalized shirts on the spot, and you
-            don&apos;t have to deal with the logistics.
+            We pre-print your event apparel and bring a professional setup to
+            personalize names and numbers live — so every attendee walks away
+            with something that&apos;s truly theirs.
           </p>
         </div>
       </section>
 
-      {/* ── WHAT MAKES IT DIFFERENT ── */}
+      {/* ── OVERVIEW ── */}
       <section className="section bg-white">
         <div className="container-content">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Turn Your Event Into an Experience
+              What Makes It Different
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Most events end up with a pile of leftover shirts in the wrong
-              sizes — or nobody gets one at all. Pre-ordering a fixed quantity
-              means guessing, and guessing wrong is expensive.
-            </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              We do it differently. We come fully prepared with pre-printed
-              custom event t-shirts in a range of sizes, set up a professional
-              vendor station at your venue, and personalize each shirt on the
-              spot. Participants choose their size. Kids get their name or number
-              added right there. Everyone walks away with something they
-              actually want to wear.
+              Ordering event shirts in bulk is the standard approach — but it
+              leaves people with a shirt that may not fit, doesn&apos;t have
+              their name on it, and feels generic. Our on-site setup changes
+              that.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              It&apos;s one less thing for organizers to manage — and it makes
-              the event feel more professional without adding work on your end.
+              We come to your event fully prepared: apparel is pre-printed,
+              inventory is organized by size, and our equipment is set up to
+              personalize garments quickly. Participants get fitted, personalized
+              apparel without waiting in long lines.
             </p>
           </div>
         </div>
@@ -105,7 +99,10 @@ export default function EventMerchPage() {
                   <h3 className="font-semibold text-gray-900 mb-1">
                     {heading}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
+                  <p
+                    className="text-gray-600 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: body }}
+                  />
                 </div>
               </div>
             ))}
@@ -113,69 +110,8 @@ export default function EventMerchPage() {
         </div>
       </section>
 
-      {/* ── WHAT'S INCLUDED ── */}
-      <section className="section bg-white">
-        <div className="container-content">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              What You Get
-            </h2>
-            <div className="grid sm:grid-cols-2 gap-8 mb-10">
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-4">
-                  Custom Event Apparel
-                </h3>
-                <ul className="space-y-3 text-gray-600 text-sm">
-                  {[
-                    "Your design, your colors, your event",
-                    "Pre-printed before event day",
-                    "Available in a full size range",
-                    "Quality garments that hold up",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span className="text-[#00693e] font-bold">✓</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-4">
-                  On-Site Personalization
-                </h3>
-                <ul className="space-y-3 text-gray-600 text-sm">
-                  {[
-                    "Names and numbers added on the spot",
-                    "Great for kids' sports events",
-                    "Fast turnaround — no long waits",
-                    "Professional vendor setup at your venue",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <span className="text-[#00693e] font-bold">✓</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-[#f4fbf7] border border-[#00693e] rounded-lg p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Revenue Share Available
-              </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                For qualifying events, we offer a revenue share arrangement —
-                meaning organizers can earn from the apparel sales without
-                handling any of the inventory or logistics themselves. Ask us
-                about this when you reach out.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── IDEAL EVENTS ── */}
-      <section className="section bg-gray-50 border-y border-gray-200">
+      <section className="section bg-white">
         <div className="container-content">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
