@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Event T-Shirts & Custom Apparel in Richmond, VA | Big Green T's",
+  title: "On-Site Event Apparel & Live Personalization | Richmond, VA | Big Green T's",
   description:
-    "Big Green T's provides on-site event apparel and live customization for tournaments, races, gymnastics meets, and community events in Richmond, Virginia. Custom screen printing and embroidery also available.",
+    "Richmond-based event apparel vendor. We bring pre-printed shirts and a live heat press to tournaments, races, gymnastics meets, and community events in and around Richmond, VA. On-site personalization — names and numbers added on the spot.",
 };
 
 const trustLogos = [
@@ -33,186 +33,164 @@ export default function RichmondVAPage() {
       <section className="section bg-white border-b border-gray-100">
         <div className="container-content">
           <p className="text-[#00693e] font-semibold text-sm uppercase tracking-widest mb-3">
-            Serving Richmond, Virginia
+            Richmond, Virginia
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-5 max-w-2xl leading-tight">
-            Event T-Shirts &amp; Custom Apparel for Richmond, VA
+            On-Site Event Apparel &amp; Live Personalization in Richmond, VA
           </h1>
           <p className="text-lg text-gray-600 max-w-xl leading-relaxed mb-8">
-            Big Green T&apos;s brings a full event apparel vendor setup to
-            Richmond — pre-printed event tees, sport and theme merchandise, and
-            a live heat press station for on-site personalization. Your event
-            gets a professional touch. Your attendees get something worth
-            keeping.
+            We&apos;re based in Richmond and go directly to your event — with
+            pre-printed apparel, a full vendor setup, and a live heat press for
+            on-site personalization. Your attendees leave with something that
+            feels made for them.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-primary">
-              Book an Event in Richmond
+              Book an Event
             </Link>
             <Link href="/event-merch" className="btn-outline">
-              How Our Events Work
+              How It Works
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── WHAT WE DO IN RICHMOND ── */}
+      {/* ── INTRO ── */}
       <section className="section bg-white">
         <div className="container-content">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-5">
-              What We Bring to Richmond Events
-            </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              Big Green T&apos;s is a family-owned custom apparel business with
-              decades of experience running on-site vendor setups at events —
-              and an active presence serving tournaments, meets, and community
-              events throughout Richmond, Virginia.
+              We bring a full event apparel setup directly to tournaments, races,
+              meets, and community events in and around Richmond, VA.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-10">
-              Whether it&apos;s a gymnastics meet, a youth basketball tournament,
-              or a community 5K, we arrive fully prepared so you don&apos;t have
-              to think about the merchandise.
+              Instead of generic merch, we offer pre-printed apparel and
+              customize names and numbers on-site — creating something attendees
+              actually care about and want to wear.
             </p>
-            <div className="grid sm:grid-cols-3 gap-5 md:gap-8">
-              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  Custom Event Tees
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Pre-printed with your Richmond event&apos;s design and
-                  branding, sorted by size, and ready to sell from the moment
-                  doors open.
-                </p>
-              </div>
-              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  Sport &amp; Theme Merch
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  We bring additional merchandise curated for your event type —
-                  sport-specific and themed apparel that fits your crowd and adds
-                  energy to your vendor area.
-                </p>
-              </div>
-              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
-                <h3 className="font-bold text-gray-900 mb-3">
-                  Live Heat Press
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Names, numbers, and custom transfers applied on-site while
-                  attendees wait. One of the most popular parts of the setup —
-                  especially for kids.
-                </p>
-              </div>
+
+            <div className="border-l-4 border-[#00693e] pl-6">
+              <h2 className="text-2xl font-bold text-gray-900 mb-5">
+                A Better Event Merchandise Experience
+              </h2>
+              <p className="text-gray-600 mb-5">
+                We operate as a live apparel vendor at your Richmond event,
+                combining speed, quality, and personalization.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Pre-printed shirts, hoodies, and apparel ready to sell",
+                  "On-site customization — names, numbers, and more",
+                  "Fast turnaround so attendees don't miss the moment",
+                  "Clean, professional setup that fits seamlessly into your event",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-gray-700">
+                    <span className="text-[#00693e] font-bold mt-0.5 shrink-0">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── WHY IT WORKS ── */}
+      {/* ── WHAT WE BRING ── */}
       <section className="section bg-gray-50 border-y border-gray-200">
         <div className="container-content">
-          <div className="max-w-3xl">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Richmond Event Organizers Work With Us
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
-              A well-run merch booth adds credibility, energy, and a memorable
-              element to your event — without adding work for your team.
-            </p>
-            <div className="grid sm:grid-cols-2 gap-6">
-              {[
-                {
-                  heading: "Professional Presence",
-                  body: "A staffed vendor booth with organized inventory and a live heat press signals that your Richmond event is well-run and worth attending.",
-                },
-                {
-                  heading: "Personal for Attendees",
-                  body: "Getting a name or number pressed onto a shirt on-site creates a moment people remember — especially kids at sports events.",
-                },
-                {
-                  heading: "Hands-Off for You",
-                  body: "We handle setup, inventory, sales, and personalization. You run your event; we run the merch.",
-                },
-                {
-                  heading: "Flexible Arrangements",
-                  body: "Revenue share, vendor fee, or a donation model — we work with Richmond organizers to find an arrangement that makes sense for your event.",
-                },
-              ].map(({ heading, body }) => (
-                <div key={heading} className="flex gap-3">
-                  <span className="text-[#00693e] font-bold mt-0.5 shrink-0">
-                    ✓
-                  </span>
-                  <div>
-                    <p className="font-semibold text-gray-900 mb-1">{heading}</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
-                  </div>
-                </div>
-              ))}
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">
+            What We Bring to Your Event
+          </h2>
+          <div className="grid sm:grid-cols-3 gap-5 md:gap-8">
+            <div className="bg-white border border-gray-200 rounded-lg p-5 md:p-6">
+              <h3 className="font-bold text-gray-900 mb-3">Custom Event Tees</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Pre-printed with your event&apos;s design, branding, and date.
+                Sorted by size and ready to go. The shirts that make your
+                Richmond event feel official.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5 md:p-6">
+              <h3 className="font-bold text-gray-900 mb-3">
+                Sport &amp; Theme Apparel
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Beyond the event shirt, we bring additional merchandise curated
+                for your crowd — sport-specific designs and themed apparel that
+                fits the vibe of your event.
+              </p>
+            </div>
+            <div className="bg-white border border-gray-200 rounded-lg p-5 md:p-6">
+              <h3 className="font-bold text-gray-900 mb-3">Heat Press Station</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Live heat press for on-site personalization — names, numbers,
+                and custom transfers applied while attendees wait. A standout
+                element at any Richmond event.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section className="section bg-white">
+      <section className="section bg-[#00693e]">
         <div className="container-content">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            How It Works
+          <h2 className="text-3xl font-bold text-white mb-3 text-center">
+            Simple Setup. Seamless Execution.
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <p className="text-green-100 text-center mb-12 max-w-lg mx-auto">
+            We handle the logistics so you can focus on running your event.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
                 step: "1",
-                heading: "Tell Us About Your Richmond Event",
-                body: "Reach out early. We'll talk through your event type, expected attendance, and what apparel and personalization options make sense.",
+                heading: "We Prepare",
+                body: "We design and print event-specific apparel ahead of time — sized, sorted, and ready for your event day in Richmond.",
               },
               {
                 step: "2",
-                heading: "We Design & Print Your Apparel",
-                body: "We produce your custom Richmond event tees in advance and curate sport or theme merchandise suited to your crowd.",
+                heading: "We Show Up Ready",
+                body: "We arrive at your venue with inventory, equipment, and a full vendor setup — everything in place before your first attendee walks in.",
               },
               {
                 step: "3",
-                heading: "We Set Up at Your Venue",
-                body: "We arrive with a full vendor setup — inventory organized, heat press ready, and everything in place before your first attendee walks in.",
-              },
-              {
-                step: "4",
-                heading: "Attendees Shop & Personalize",
-                body: "People browse, pick their size, and get personalized right there. Fast, clean, and something they'll actually keep.",
+                heading: "We Customize On-Site",
+                body: "Attendees choose their gear and personalize it on the spot. Names, numbers, and more — fast, clean, and something they'll keep.",
               },
             ].map(({ step, heading, body }) => (
-              <div key={step} className="flex gap-4">
-                <div className="shrink-0 w-10 h-10 rounded-full bg-[#00693e] text-white font-bold flex items-center justify-center text-sm">
+              <div
+                key={step}
+                className="bg-white/10 border border-white/20 rounded-xl p-6 md:p-8 text-center"
+              >
+                <div className="w-12 h-12 rounded-full bg-white text-[#00693e] font-bold text-xl flex items-center justify-center mx-auto mb-4">
                   {step}
                 </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">{heading}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
-                </div>
+                <h3 className="text-white font-bold text-lg mb-2">
+                  Step {step} — {heading}
+                </h3>
+                <p className="text-green-100 text-sm leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── RICHMOND EVENTS ── */}
-      <section className="section bg-gray-50 border-y border-gray-200">
+      {/* ── PERFECT FOR ── */}
+      <section className="section bg-white">
         <div className="container-content">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Richmond Events We&apos;re Built For
           </h2>
           <p className="text-gray-600 mb-8">
-            From youth sports to community festivals, we&apos;ve built our
-            setup around the kinds of events that Richmond hosts.
+            From youth sports tournaments to community festivals, we work
+            events of all sizes across the Richmond area.
           </p>
           <div className="flex flex-wrap gap-3">
             {richmondEvents.map((item) => (
               <span
                 key={item}
-                className="bg-white border border-[#00693e] text-[#00693e] font-medium text-sm px-4 py-2 rounded-full"
+                className="bg-[#f4fbf7] border border-[#00693e] text-[#00693e] font-medium text-sm px-4 py-2 rounded-full"
               >
                 {item}
               </span>
@@ -221,16 +199,41 @@ export default function RichmondVAPage() {
         </div>
       </section>
 
+      {/* ── WHY IT WORKS ── */}
+      <section className="section bg-gray-50 border-y border-gray-200">
+        <div className="container-content">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Why Richmond Organizers Choose Us
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed mb-5">
+              Event merchandise should feel like part of the experience — not an
+              afterthought.
+            </p>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              We help elevate Richmond events by offering something interactive,
+              memorable, and genuinely valuable to attendees. When people can
+              personalize what they&apos;re taking home, it becomes more than
+              just a shirt — it becomes part of the event itself.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Depending on the arrangement, a portion of proceeds can go back to
+              your organization. We&apos;re flexible — vendor fee, revenue share,
+              or a donation model all work.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── ALSO IN RICHMOND ── */}
-      <section className="section bg-white">
+      <section className="section bg-white border-b border-gray-200">
         <div className="container-content">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Also Serving Richmond With Custom Apparel
+            More Custom Apparel for Richmond
           </h2>
           <p className="text-gray-600 mb-8 max-w-2xl">
-            Beyond events, Big Green T&apos;s provides custom screen printing
-            and embroidery for Richmond-area businesses, organizations, and
-            teams.
+            Beyond events, we offer custom screen printing and embroidery for
+            Richmond-area businesses, organizations, and teams.
           </p>
           <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
             <div className="border border-gray-200 rounded-lg p-5 md:p-6">
@@ -240,10 +243,7 @@ export default function RichmondVAPage() {
                 schools, and organizations — 1–6 color printing on t-shirts,
                 hoodies, and more.
               </p>
-              <Link
-                href="/services"
-                className="text-[#00693e] font-semibold text-sm hover:underline"
-              >
+              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
                 View screen printing &rarr;
               </Link>
             </div>
@@ -253,10 +253,7 @@ export default function RichmondVAPage() {
                 Embroidered polos, hats, and jackets for Richmond businesses
                 and teams — clean, durable, and professional.
               </p>
-              <Link
-                href="/services"
-                className="text-[#00693e] font-semibold text-sm hover:underline"
-              >
+              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
                 View embroidery &rarr;
               </Link>
             </div>
@@ -265,7 +262,7 @@ export default function RichmondVAPage() {
       </section>
 
       {/* ── CREDENTIALS ── */}
-      <section className="section bg-gray-50 border-y border-gray-200">
+      <section className="section bg-gray-50 border-b border-gray-200">
         <div className="container-content">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor Credentials
@@ -295,29 +292,12 @@ export default function RichmondVAPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                quote: "Your review will appear here.",
-                name: "Event Organizer",
-                event: "Event Name, Richmond VA",
-              },
-              {
-                quote: "Your review will appear here.",
-                name: "Event Organizer",
-                event: "Event Name, Richmond VA",
-              },
-              {
-                quote: "Your review will appear here.",
-                name: "Event Organizer",
-                event: "Event Name, Richmond VA",
-              },
+              { quote: "Your review will appear here.", name: "Event Organizer", event: "Event Name, Richmond VA" },
+              { quote: "Your review will appear here.", name: "Event Organizer", event: "Event Name, Richmond VA" },
+              { quote: "Your review will appear here.", name: "Event Organizer", event: "Event Name, Richmond VA" },
             ].map(({ quote, name, event }, i) => (
-              <div
-                key={i}
-                className="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col gap-4"
-              >
-                <p className="text-gray-600 text-sm leading-relaxed italic">
-                  &ldquo;{quote}&rdquo;
-                </p>
+              <div key={i} className="bg-gray-50 border border-gray-200 rounded-lg p-6 flex flex-col gap-4">
+                <p className="text-gray-600 text-sm leading-relaxed italic">&ldquo;{quote}&rdquo;</p>
                 <div className="mt-auto pt-4 border-t border-gray-100">
                   <p className="font-semibold text-gray-900 text-sm">{name}</p>
                   <p className="text-gray-400 text-xs mt-0.5">{event}</p>
@@ -328,44 +308,15 @@ export default function RichmondVAPage() {
         </div>
       </section>
 
-      {/* ── ABOUT ── */}
-      <section className="section bg-gray-50 border-y border-gray-200">
-        <div className="container-content">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
-              About Big Green T&apos;s
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              We&apos;re a family-owned screen printing and embroidery business
-              with roots in Lebanon, NH and an active presence serving events
-              and organizations throughout Richmond, Virginia. Since 1987,
-              we&apos;ve built our reputation on showing up prepared and doing
-              the work right.
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-6">
-              When you work with us, you&apos;re talking directly to the people
-              who print the shirts, run the heat press, and show up on event day.
-              No middlemen. No guesswork.
-            </p>
-            <Link href="/about" className="text-[#00693e] font-semibold hover:underline">
-              More about us &rarr;
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* ── TRUST CAROUSEL ── */}
-      <section className="border-b border-gray-200 py-8 bg-white overflow-hidden">
+      <section className="border-y border-gray-200 py-8 bg-gray-50 overflow-hidden">
         <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6">
           Trusted By
         </p>
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...trustLogos, ...trustLogos].map((name, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center mx-10 text-gray-400 font-semibold text-sm tracking-wide uppercase"
-              >
+              <span key={i} className="inline-flex items-center mx-10 text-gray-400 font-semibold text-sm tracking-wide uppercase">
                 {name}
               </span>
             ))}
@@ -377,11 +328,11 @@ export default function RichmondVAPage() {
       <section className="section bg-[#00693e]">
         <div className="container-content text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Planning an Event in Richmond?
+            Hosting an Event in Richmond?
           </h2>
           <p className="text-green-100 mb-8 max-w-md mx-auto text-lg">
-            Reach out early — the more lead time we have, the better we can
-            prepare. We&apos;ll walk through the details and make it easy.
+            Let&apos;s bring a better apparel experience to your next Richmond
+            event. Reach out early — the more lead time, the better.
           </p>
           <Link
             href="/contact"
