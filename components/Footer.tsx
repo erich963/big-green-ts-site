@@ -14,7 +14,8 @@ export default function Footer() {
               Custom Screen Printing &amp; Embroidery
               <br />
               Lebanon, NH &middot; Richmond, VA
-              <br />
+            </p>
+            <p className="text-xs text-gray-500 mt-1">
               Outfitting the Upper Valley and beyond since 1987.
             </p>
           </div>
