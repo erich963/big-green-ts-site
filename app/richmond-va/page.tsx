@@ -83,8 +83,8 @@ export default function RichmondVAPage() {
               set up a full vendor booth, and stay for the duration. Here&apos;s
               what that looks like:
             </p>
-            <div className="grid sm:grid-cols-3 gap-8">
-              <div className="border border-gray-200 rounded-lg p-6">
+            <div className="grid sm:grid-cols-3 gap-5 md:gap-8">
+              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
                 <h3 className="font-bold text-gray-900 mb-3">
                   Custom Event Tees
                 </h3>
@@ -94,7 +94,7 @@ export default function RichmondVAPage() {
                   that make your event feel official.
                 </p>
               </div>
-              <div className="border border-gray-200 rounded-lg p-6">
+              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
                 <h3 className="font-bold text-gray-900 mb-3">
                   Sport &amp; Theme Apparel
                 </h3>
@@ -104,7 +104,7 @@ export default function RichmondVAPage() {
                   apparel, and prints that fit the vibe of your event.
                 </p>
               </div>
-              <div className="border border-gray-200 rounded-lg p-6">
+              <div className="border border-gray-200 rounded-lg p-4 md:p-6">
                 <h3 className="font-bold text-gray-900 mb-3">
                   Heat Press Station
                 </h3>

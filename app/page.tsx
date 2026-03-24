@@ -45,7 +45,7 @@ export default function Home() {
           <p className="text-white text-center text-sm md:text-base font-medium tracking-wide">
             Businesses &nbsp;·&nbsp; Organizations &nbsp;·&nbsp; Schools
             &nbsp;·&nbsp; Sport Teams &nbsp;·&nbsp; Rec Departments
-            &nbsp;·&nbsp; Events
+            &nbsp;·&nbsp; Community Events
           </p>
         </div>
       </section>
@@ -74,9 +74,9 @@ export default function Home() {
         <div className="container-content">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Services</h2>
 
-          <div className="grid md:grid-cols-2 gap-10 mb-10">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-6 md:mb-10">
             {/* Screen Printing */}
-            <div className="border border-gray-200 rounded-lg p-8">
+            <div className="border border-gray-200 rounded-lg p-5 md:p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Screen Printing
               </h3>
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             {/* Embroidery */}
-            <div className="border border-gray-200 rounded-lg p-8">
+            <div className="border border-gray-200 rounded-lg p-5 md:p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Embroidery
               </h3>
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           {/* Events — full-width feature card */}
-          <div className="border border-[#00693e] rounded-lg p-8 bg-[#f4fbf7]">
+          <div className="border border-[#00693e] rounded-lg p-5 md:p-8 bg-[#f4fbf7]">
             <div className="inline-block bg-[#00693e] text-white text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded mb-4">
               On-Site Events
             </div>
