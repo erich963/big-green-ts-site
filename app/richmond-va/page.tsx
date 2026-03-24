@@ -39,10 +39,11 @@ export default function RichmondVAPage() {
             Event T-Shirts &amp; Custom Apparel for Richmond, VA
           </h1>
           <p className="text-lg text-gray-600 max-w-xl leading-relaxed mb-8">
-            We travel to Richmond with a full vendor setup — event-specific
-            apparel, sport and theme merchandise, and a live heat press station
-            for on-site personalization. Your event gets a professional touch.
-            Your attendees get something they&apos;ll actually keep.
+            Big Green T&apos;s brings a full event apparel vendor setup to
+            Richmond — pre-printed event tees, sport and theme merchandise, and
+            a live heat press station for on-site personalization. Your event
+            gets a professional touch. Your attendees get something worth
+            keeping.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact" className="btn-primary">
@@ -63,10 +64,10 @@ export default function RichmondVAPage() {
               What We Bring to Richmond Events
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
-              We&apos;re a family-owned custom apparel business from Lebanon, NH
-              with decades of experience running on-site vendor setups at events
-              across New England — and we bring that same service to Richmond,
-              Virginia.
+              Big Green T&apos;s is a family-owned custom apparel business with
+              decades of experience running on-site vendor setups at events —
+              and an active presence serving tournaments, meets, and community
+              events throughout Richmond, Virginia.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed mb-10">
               Whether it&apos;s a gymnastics meet, a youth basketball tournament,
@@ -174,8 +175,8 @@ export default function RichmondVAPage() {
               },
               {
                 step: "3",
-                heading: "We Travel to Richmond & Set Up",
-                body: "We make the trip with a full vendor setup — inventory organized, heat press ready, and everything in place before your first attendee arrives.",
+                heading: "We Set Up at Your Venue",
+                body: "We arrive with a full vendor setup — inventory organized, heat press ready, and everything in place before your first attendee walks in.",
               },
               {
                 step: "4",
@@ -290,7 +291,7 @@ export default function RichmondVAPage() {
       <section className="section bg-white">
         <div className="container-content">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-            What Richmond Event Organizers Say
+            What Event Organizers Say
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -336,9 +337,10 @@ export default function RichmondVAPage() {
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               We&apos;re a family-owned screen printing and embroidery business
-              based in Lebanon, NH — serving the Upper Valley since 1987. We
-              travel to Richmond, VA for events and work directly with organizers,
-              sports organizations, and community groups throughout the area.
+              with roots in Lebanon, NH and an active presence serving events
+              and organizations throughout Richmond, Virginia. Since 1987,
+              we&apos;ve built our reputation on showing up prepared and doing
+              the work right.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
               When you work with us, you&apos;re talking directly to the people

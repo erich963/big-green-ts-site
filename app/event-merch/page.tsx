@@ -35,11 +35,12 @@ export default function EventMerchPage() {
         <div className="container-content">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-5">
-              On-Site Event Apparel That People Actually Want
+              On-Site Event Apparel &amp; Live Personalization
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We show up with pre-printed gear and customize it live — so your
-              attendees leave with something personal.
+              We show up to your event with pre-printed gear and customize it
+              live — names, numbers, and more — so every attendee leaves with
+              something that feels made for them.
             </p>
             <Link href="/contact" className="btn-primary">
               Book Your Event
