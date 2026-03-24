@@ -227,7 +227,6 @@ export default function RichmondVAPage() {
             {[
               { org: "USA Gymnastics", role: "Licensed Vendor" },
               { org: "Richmond Recreation Department", role: "Official Vendor" },
-              { org: "Lebanon Recreation Department", role: "Official Vendor" },
             ].map(({ org, role }) => (
               <div
                 key={org}
@@ -235,6 +234,47 @@ export default function RichmondVAPage() {
               >
                 <p className="text-[#00693e] font-bold text-sm">{org}</p>
                 <p className="text-gray-500 text-xs mt-1">{role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── REVIEWS ── */}
+      <section className="section bg-gray-50 border-y border-gray-200">
+        <div className="container-content">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+            What Event Organizers Say
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "Your review will appear here.",
+                name: "Event Organizer",
+                event: "Event Name, Richmond VA",
+              },
+              {
+                quote: "Your review will appear here.",
+                name: "Event Organizer",
+                event: "Event Name, Richmond VA",
+              },
+              {
+                quote: "Your review will appear here.",
+                name: "Event Organizer",
+                event: "Event Name, Richmond VA",
+              },
+            ].map(({ quote, name, event }, i) => (
+              <div
+                key={i}
+                className="bg-white border border-gray-200 rounded-lg p-6 flex flex-col gap-4"
+              >
+                <p className="text-gray-600 text-sm leading-relaxed italic">
+                  &ldquo;{quote}&rdquo;
+                </p>
+                <div className="mt-auto pt-4 border-t border-gray-100">
+                  <p className="font-semibold text-gray-900 text-sm">{name}</p>
+                  <p className="text-gray-400 text-xs mt-0.5">{event}</p>
+                </div>
               </div>
             ))}
           </div>
