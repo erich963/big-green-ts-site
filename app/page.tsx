@@ -66,7 +66,7 @@ export default function Home() {
                   alt={logo.alt}
                   width={200}
                   height={80}
-                  className="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-80 transition-all duration-300"
+                  className="h-14 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-80 transition-all duration-300"
                 />
               </div>
             ))}

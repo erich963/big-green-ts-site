@@ -226,42 +226,6 @@ export default function RichmondVAPage() {
         </div>
       </section>
 
-      {/* ── ALSO IN RICHMOND ── */}
-      <section className="section bg-white border-b border-gray-200">
-        <div className="container-content">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            More Custom Apparel for Richmond
-          </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl">
-            Beyond events, we offer custom screen printing and embroidery for
-            Richmond-area businesses, organizations, and teams.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
-            <div className="border border-gray-200 rounded-lg p-5 md:p-6">
-              <h3 className="font-bold text-gray-900 mb-2">Screen Printing</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Custom screen-printed apparel for Richmond businesses, teams,
-                schools, and organizations — 1–6 color printing on t-shirts,
-                hoodies, and more.
-              </p>
-              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
-                View screen printing &rarr;
-              </Link>
-            </div>
-            <div className="border border-gray-200 rounded-lg p-5 md:p-6">
-              <h3 className="font-bold text-gray-900 mb-2">Embroidery</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Embroidered polos, hats, and jackets for Richmond businesses
-                and teams — clean, durable, and professional.
-              </p>
-              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
-                View embroidery &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── CREDENTIALS ── */}
       <section className="section bg-gray-50 border-b border-gray-200">
         <div className="container-content">
@@ -286,6 +250,42 @@ export default function RichmondVAPage() {
                 height={180}
                 className="h-40 w-auto object-contain"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── BEYOND EVENTS ── */}
+      <section className="section bg-white border-b border-gray-200">
+        <div className="container-content">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Beyond Events
+          </h2>
+          <p className="text-gray-600 mb-8 max-w-2xl">
+            We also offer custom screen printing and embroidery for
+            Richmond-area businesses, organizations, and teams.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
+            <div className="border border-gray-200 rounded-lg p-5 md:p-6">
+              <h3 className="font-bold text-gray-900 mb-2">Screen Printing</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Custom screen-printed apparel for Richmond businesses, teams,
+                schools, and organizations — 1–6 color printing on t-shirts,
+                hoodies, and more.
+              </p>
+              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
+                View screen printing &rarr;
+              </Link>
+            </div>
+            <div className="border border-gray-200 rounded-lg p-5 md:p-6">
+              <h3 className="font-bold text-gray-900 mb-2">Embroidery</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Embroidered polos, hats, and jackets for Richmond businesses
+                and teams — clean, durable, and professional.
+              </p>
+              <Link href="/services" className="text-[#00693e] font-semibold text-sm hover:underline">
+                View embroidery &rarr;
+              </Link>
             </div>
           </div>
         </div>
