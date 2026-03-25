@@ -266,25 +266,25 @@ export default function RichmondVAPage() {
       <section className="section bg-gray-50 border-b border-gray-200">
         <div className="container-content">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
-            Official Vendor Credentials
+            Official Vendor
           </p>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
               <Image
                 src="/usa-gymnastics-badge.png"
                 alt="USA Gymnastics Licensed Vendor"
-                width={200}
-                height={120}
-                className="h-24 w-auto object-contain"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
               />
             </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
               <Image
                 src="/richmond-rec-badge.png"
                 alt="Richmond Parks & Recreation Official Vendor"
-                width={200}
-                height={120}
-                className="h-24 w-auto object-contain"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
               />
             </div>
           </div>
