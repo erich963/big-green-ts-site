@@ -1,11 +1,13 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const trustLogos = [
-  "Rowing News",
-  "Stateline Sports",
-  "Edgewater Farm",
-  "Dartmouth College",
-  "Lebanon Recreation Department",
+  { src: "/wweft-logo.png", alt: "Wayne's World Event Final Tour" },
+  { src: "/rowing-news-logo.png", alt: "Rowing News" },
+  { src: "/lebanon-rec-logo.png", alt: "Lebanon Recreation Department" },
+  { src: "/dartmouth-logo.png", alt: "Dartmouth College" },
+  { src: "/hanover-rec-logo.png", alt: "Hanover Parks & Recreation" },
+  { src: "/stateline-sports-logo.png", alt: "Stateline Sports" },
 ];
 
 export default function Home() {
@@ -57,13 +59,16 @@ export default function Home() {
         </p>
         <div className="overflow-hidden">
           <div className="animate-marquee">
-            {[...trustLogos, ...trustLogos].map((name, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center mx-10 text-gray-400 font-semibold text-sm tracking-wide uppercase"
-              >
-                {name}
-              </span>
+            {[...trustLogos, ...trustLogos].map((logo, i) => (
+              <div key={i} className="inline-flex items-center mx-10 shrink-0">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={200}
+                  height={80}
+                  className="h-10 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-80 transition-all duration-300"
+                />
+              </div>
             ))}
           </div>
         </div>

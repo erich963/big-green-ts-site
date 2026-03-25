@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "On-Site Event Apparel & Live Personalization | Richmond, VA | Big Green T's",
@@ -267,19 +268,25 @@ export default function RichmondVAPage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor Credentials
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            {[
-              { org: "USA Gymnastics", role: "Licensed Vendor" },
-              { org: "Richmond Recreation Department", role: "Official Vendor" },
-            ].map(({ org, role }) => (
-              <div
-                key={org}
-                className="border-2 border-[#00693e] rounded-lg px-8 py-5 text-center min-w-[180px]"
-              >
-                <p className="text-[#00693e] font-bold text-sm">{org}</p>
-                <p className="text-gray-500 text-xs mt-1">{role}</p>
-              </div>
-            ))}
+          <div className="flex flex-wrap gap-8 justify-center items-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-center">
+              <Image
+                src="/usa-gymnastics-badge.png"
+                alt="USA Gymnastics Licensed Vendor"
+                width={200}
+                height={120}
+                className="h-24 w-auto object-contain"
+              />
+            </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-center">
+              <Image
+                src="/richmond-rec-badge.png"
+                alt="Richmond Parks & Recreation Official Vendor"
+                width={200}
+                height={120}
+                className="h-24 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
