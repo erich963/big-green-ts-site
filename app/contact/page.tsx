@@ -41,10 +41,10 @@ export default function ContactPage() {
                     Phone
                   </p>
                   <a
-                    href="tel:+16035551234"
+                    href="tel:+16034485261"
                     className="text-gray-900 text-lg font-medium hover:text-[#00693e] transition-colors"
                   >
-                    (603) 555-1234
+                    (603) 448-5261
                   </a>
                 </div>
 

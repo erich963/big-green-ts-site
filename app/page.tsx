@@ -87,10 +87,10 @@ export default function Home() {
               </h3>
               <ul className="space-y-3 text-gray-600 mb-6">
                 {[
-                  "1–6 color printing",
-                  "Team uniforms & spirit wear",
-                  "Business & staff apparel",
-                  "Event shirts",
+                  "1–6 color prints with clean, consistent results",
+                  "Perfect for teams, businesses, and event apparel",
+                  "Soft, durable prints that hold up over time",
+                  "Consistent quality across every order",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="text-[#00693e] mt-0.5">✓</span>
@@ -110,9 +110,10 @@ export default function Home() {
               </h3>
               <ul className="space-y-3 text-gray-600 mb-6">
                 {[
-                  "Polos, hats, and jackets",
-                  "Clean, durable stitching",
-                  "Professional finish for any application",
+                  "Polos, hats, jackets, and premium apparel",
+                  "Clean, durable stitching that holds up over time",
+                  "Professional finish that elevates your brand",
+                  "Sharp, high-detail results even on smaller designs",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="text-[#00693e] mt-0.5">✓</span>
