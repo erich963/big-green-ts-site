@@ -231,14 +231,14 @@ export default function EventMerchPage() {
             {[...eventLogos, ...eventLogos].map((logo, i) => (
               <div
                 key={i}
-                className="inline-flex items-center justify-center mx-16 shrink-0 h-[346px] w-[403px]"
+                className="inline-flex items-center justify-center mx-10 shrink-0 h-[346px] w-[346px]"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   width={560}
                   height={560}
-                  className="h-full w-full object-contain"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             ))}
