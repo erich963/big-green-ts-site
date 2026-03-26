@@ -225,13 +225,13 @@ export default function EventMerchPage() {
       </section>
 
       {/* ── EVENT LOGO CAROUSEL ── */}
-      <section className="border-y border-gray-200 py-14 bg-white overflow-hidden">
+      <section className="border-y border-gray-200 py-8 bg-white overflow-hidden">
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...eventLogos, ...eventLogos].map((logo, i) => (
               <div
                 key={i}
-                className="inline-flex items-center justify-center mx-10 shrink-0 h-[346px] w-[346px]"
+                className="inline-flex items-center justify-center mx-8 shrink-0 h-[240px] w-[240px]"
               >
                 <Image
                   src={logo.src}
