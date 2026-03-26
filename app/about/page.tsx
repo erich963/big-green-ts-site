@@ -50,13 +50,20 @@ export default function AboutPage() {
                 Dartmouth Roots
               </h2>
               <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <p className="text-gray-600 text-lg leading-relaxed flex-1">
-                  Our name comes from our roots near Dartmouth College — and the
-                  green that&apos;s woven through everything we do. The
-                  connection to that community shaped how we think about work:
-                  do it well, stand behind it, and build something lasting.
-                </p>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shrink-0 w-48 sm:w-56">
+                <div className="flex-1 space-y-4">
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    Brian graduated from Dartmouth College in 1986 and started
+                    Big Green T&apos;s the following year — a name that wears its
+                    roots on its sleeve.
+                  </p>
+                  <p className="text-gray-600 text-lg leading-relaxed">
+                    Our name comes from our roots near Dartmouth College — and the
+                    green that&apos;s woven through everything we do. The
+                    connection to that community shaped how we think about work:
+                    do it well, stand behind it, and build something lasting.
+                  </p>
+                </div>
+                <div className="rounded-xl overflow-hidden border border-gray-200 shrink-0 w-48 sm:w-56 mt-1">
                   <Image
                     src="/dartmouth-campus.jpg"
                     alt="Dartmouth College campus"
