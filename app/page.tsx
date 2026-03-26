@@ -64,7 +64,7 @@ export default function Home() {
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...trustLogos, ...trustLogos].map((logo, i) => (
-              <div key={i} className="inline-flex items-center justify-center mx-10 shrink-0 h-[200px] w-[300px]">
+              <div key={i} className="inline-flex items-center justify-center mx-10 shrink-0 h-[160px] w-[240px]">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
