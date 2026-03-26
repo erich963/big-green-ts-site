@@ -267,20 +267,13 @@ export default function EventMerchPage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor
           </p>
-          <div className="flex flex-wrap gap-10 justify-center items-center">
+          <div className="flex justify-center">
             <Image
-              src="/usa-gymnastics-badge.png"
-              alt="USA Gymnastics Licensed Vendor"
-              width={220}
-              height={140}
-              className="h-28 w-auto object-contain opacity-90"
-            />
-            <Image
-              src="/aau-badge.png"
-              alt="AAU Official Vendor"
-              width={220}
-              height={140}
-              className="h-28 w-auto object-contain opacity-90"
+              src="/official-vendor-events.png"
+              alt="Official Vendor — USA Gymnastics, AAU"
+              width={1200}
+              height={300}
+              className="w-full max-w-2xl h-auto object-contain"
             />
           </div>
         </div>

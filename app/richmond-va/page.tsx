@@ -281,7 +281,7 @@ export default function RichmondVAPage() {
           </p>
           <div className="flex justify-center">
             <Image
-              src="/official-vendor-badge.png"
+              src="/official-vendor-richmond.png"
               alt="Official Vendor — USA Gymnastics, Richmond Parks & Recreation, AAU"
               width={1200}
               height={300}
