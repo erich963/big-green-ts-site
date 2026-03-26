@@ -290,8 +290,8 @@ export default function RichmondVAPage() {
             <Image
               src="/richmond-rec-badge.png"
               alt="Richmond Parks & Recreation Official Vendor"
-              width={260}
-              height={500}
+              width={600}
+              height={450}
               className="h-44 w-auto object-contain"
             />
             <Image
