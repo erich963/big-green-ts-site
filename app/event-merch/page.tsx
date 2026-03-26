@@ -185,16 +185,14 @@ export default function EventMerchPage() {
             We&apos;ve worked events of all sizes and types. If you&apos;re
             bringing a crowd together, we can make it more memorable.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-3">
             {perfectFor.map((item) => (
-              <span
-                key={item}
-                className="bg-[#f4fbf7] border border-[#00693e] text-[#00693e] font-medium text-sm px-4 py-2 rounded-full"
-              >
+              <li key={item} className="flex items-center gap-3 text-gray-700">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00693e] shrink-0" />
                 {item}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
