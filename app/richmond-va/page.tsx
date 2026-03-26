@@ -292,7 +292,7 @@ export default function RichmondVAPage() {
               alt="Richmond Parks & Recreation Official Vendor"
               width={280}
               height={180}
-              className="h-[166px] w-auto object-contain"
+              className="h-[183px] w-auto object-contain"
             />
             <Image
               src="/aau-badge.png"
