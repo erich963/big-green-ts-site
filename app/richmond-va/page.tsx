@@ -8,14 +8,6 @@ export const metadata: Metadata = {
     "Richmond-based event apparel vendor. We bring pre-printed shirts and a live heat press to tournaments, races, gymnastics meets, and community events in and around Richmond, VA. On-site personalization — names and numbers added on the spot.",
 };
 
-const trustLogos = [
-  "Rowing News",
-  "Stateline Sports",
-  "Edgewater Farm",
-  "Dartmouth College",
-  "Lebanon Recreation Department",
-];
-
 const richmondEvents = [
   "Sports Tournaments & Jamborees",
   "Gymnastics Meets & Competitions",
@@ -310,22 +302,6 @@ export default function RichmondVAPage() {
                   <p className="text-gray-400 text-xs mt-0.5">{event}</p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── TRUST CAROUSEL ── */}
-      <section className="border-y border-gray-200 py-8 bg-gray-50 overflow-hidden">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6">
-          Trusted By
-        </p>
-        <div className="overflow-hidden">
-          <div className="animate-marquee">
-            {[...trustLogos, ...trustLogos].map((name, i) => (
-              <span key={i} className="inline-flex items-center mx-10 text-gray-400 font-semibold text-sm tracking-wide uppercase">
-                {name}
-              </span>
             ))}
           </div>
         </div>
