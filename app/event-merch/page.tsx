@@ -278,9 +278,9 @@ export default function EventMerchPage() {
             <Image
               src="/richmond-rec-badge.png"
               alt="Richmond Parks & Recreation Official Vendor"
-              width={160}
-              height={80}
-              className="h-14 w-auto object-contain opacity-80"
+              width={220}
+              height={110}
+              className="h-20 w-auto object-contain opacity-80"
             />
             <Image
               src="/lebanon-rec-logo.png"

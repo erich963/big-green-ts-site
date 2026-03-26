@@ -60,13 +60,13 @@ export default function Home() {
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...trustLogos, ...trustLogos].map((logo, i) => (
-              <div key={i} className="inline-flex items-center justify-center mx-12 shrink-0 h-20 w-44">
+              <div key={i} className="inline-flex items-center justify-center mx-12 shrink-0 h-24 w-48">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={200}
-                  height={80}
-                  className="max-h-full max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-90 transition-all duration-300"
+                  width={220}
+                  height={100}
+                  className="max-h-full max-w-full object-contain transition-all duration-300"
                 />
               </div>
             ))}
