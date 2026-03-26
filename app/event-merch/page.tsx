@@ -227,7 +227,7 @@ export default function EventMerchPage() {
       {/* ── EVENT LOGO CAROUSEL ── */}
       <section className="border-y border-gray-200 py-8 bg-white overflow-hidden">
         <div className="overflow-hidden">
-          <div className="animate-marquee">
+          <div className="animate-marquee items-center">
             {[...eventLogos, ...eventLogos].map((logo, i) => (
               <div
                 key={i}
@@ -238,7 +238,7 @@ export default function EventMerchPage() {
                   alt={logo.alt}
                   width={560}
                   height={560}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain object-center"
                 />
               </div>
             ))}
