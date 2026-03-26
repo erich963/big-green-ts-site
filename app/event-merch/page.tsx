@@ -14,7 +14,7 @@ const eventLogos = [
   { src: "/event-logos/head-of-the-schuylkill.png", alt: "Head of the Schuylkill", dark: false },
   { src: "/event-logos/saratoga-regattas.png", alt: "Saratoga Regattas", dark: false },
   { src: "/event-logos/textile-river-regatta.png", alt: "Textile River Regatta", dark: false },
-  { src: "/event-logos/hank-tenney-classic.png", alt: "Hank Tenney Classic", dark: true },
+  { src: "/event-logos/hank-tenney-classic.png", alt: "Hank Tenney Classic", dark: false },
 ];
 
 const perfectFor = [
