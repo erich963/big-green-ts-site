@@ -68,8 +68,8 @@ export default function Home() {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={300}
-                  height={200}
+                  width={600}
+                  height={400}
                   className="max-h-full max-w-full object-contain transition-all duration-300"
                 />
               </div>
