@@ -279,34 +279,28 @@ export default function RichmondVAPage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor
           </p>
-          <div className="flex items-center justify-center w-full">
-            <div className="flex-1 flex items-center justify-center">
-              <Image
-                src="/usa-gymnastics-badge.png"
-                alt="USA Gymnastics Licensed Vendor"
-                width={280}
-                height={180}
-                className="h-44 w-auto object-contain"
-              />
-            </div>
-            <div className="flex-1 flex items-center justify-center">
-              <Image
-                src="/richmond-rec-badge.png"
-                alt="Richmond Parks & Recreation Official Vendor"
-                width={600}
-                height={450}
-                className="h-[280px] w-auto object-contain"
-              />
-            </div>
-            <div className="flex-1 flex items-center justify-center">
-              <Image
-                src="/aau-badge.png"
-                alt="AAU Official Vendor"
-                width={280}
-                height={180}
-                className="h-44 w-auto object-contain"
-              />
-            </div>
+          <div className="flex items-center justify-evenly w-full">
+            <Image
+              src="/usa-gymnastics-badge.png"
+              alt="USA Gymnastics Licensed Vendor"
+              width={280}
+              height={180}
+              className="h-44 w-auto object-contain"
+            />
+            <Image
+              src="/richmond-rec-badge.png"
+              alt="Richmond Parks & Recreation Official Vendor"
+              width={600}
+              height={450}
+              className="h-[280px] w-auto object-contain"
+            />
+            <Image
+              src="/aau-badge.png"
+              alt="AAU Official Vendor"
+              width={280}
+              height={180}
+              className="h-44 w-auto object-contain"
+            />
           </div>
         </div>
       </section>
