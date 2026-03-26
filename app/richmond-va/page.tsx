@@ -230,44 +230,6 @@ export default function RichmondVAPage() {
         </div>
       </section>
 
-      {/* ── CREDENTIALS ── */}
-      <section className="section bg-gray-50 border-b border-gray-200">
-        <div className="container-content">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
-            Official Vendor
-          </p>
-          <div className="flex flex-wrap gap-8 justify-center items-center">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/usa-gymnastics-badge.png"
-                alt="USA Gymnastics Licensed Vendor"
-                width={300}
-                height={180}
-                className="h-40 w-auto object-contain"
-              />
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/richmond-rec-badge.png"
-                alt="Richmond Parks & Recreation Official Vendor"
-                width={380}
-                height={220}
-                className="h-52 w-auto object-contain"
-              />
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/aau-badge.png"
-                alt="AAU Official Vendor"
-                width={300}
-                height={180}
-                className="h-40 w-auto object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── REVIEWS ── */}
       <section className="section bg-white">
         <div className="container-content">
@@ -343,6 +305,38 @@ export default function RichmondVAPage() {
                 View embroidery &rarr;
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── OFFICIAL VENDOR ── */}
+      <section className="border-t border-gray-200 py-10 bg-white">
+        <div className="container-content">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
+            Official Vendor
+          </p>
+          <div className="flex flex-wrap gap-10 justify-center items-center">
+            <Image
+              src="/usa-gymnastics-badge.png"
+              alt="USA Gymnastics Licensed Vendor"
+              width={280}
+              height={180}
+              className="h-44 w-auto object-contain"
+            />
+            <Image
+              src="/richmond-rec-badge.png"
+              alt="Richmond Parks & Recreation Official Vendor"
+              width={280}
+              height={180}
+              className="h-44 w-auto object-contain"
+            />
+            <Image
+              src="/aau-badge.png"
+              alt="AAU Official Vendor"
+              width={280}
+              height={180}
+              className="h-44 w-auto object-contain"
+            />
           </div>
         </div>
       </section>
