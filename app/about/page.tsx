@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About | Big Green T's",
@@ -48,12 +49,21 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 Dartmouth Roots
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-lg leading-relaxed mb-6">
                 Our name comes from our roots near Dartmouth College — and the
                 green that&apos;s woven through everything we do. The
                 connection to that community shaped how we think about work:
                 do it well, stand behind it, and build something lasting.
               </p>
+              <div className="rounded-xl overflow-hidden border border-gray-200">
+                <Image
+                  src="/dartmouth-campus.jpg"
+                  alt="Dartmouth College campus"
+                  width={1000}
+                  height={700}
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+              </div>
             </div>
 
             <div>

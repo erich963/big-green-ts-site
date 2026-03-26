@@ -48,6 +48,18 @@ export default function RichmondVAPage() {
         </div>
       </section>
 
+      {/* ── RICHMOND PHOTO ── */}
+      <div className="w-full overflow-hidden" style={{ height: "340px" }}>
+        <Image
+          src="/richmond-virginia.jpg"
+          alt="Richmond, Virginia"
+          width={1000}
+          height={700}
+          className="w-full h-full object-cover object-center"
+          priority
+        />
+      </div>
+
       {/* ── INTRO ── */}
       <section className="section bg-white">
         <div className="container-content">
@@ -243,6 +255,15 @@ export default function RichmondVAPage() {
                 className="h-40 w-auto object-contain"
               />
             </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
+              <Image
+                src="/aau-badge.png"
+                alt="AAU Official Vendor"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -268,6 +289,25 @@ export default function RichmondVAPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="section bg-[#00693e]">
+        <div className="container-content text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Hosting an Event in Richmond?
+          </h2>
+          <p className="text-green-100 mb-8 max-w-md mx-auto text-lg">
+            Let&apos;s bring a better apparel experience to your next Richmond
+            event. Reach out early — the more lead time, the better.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-white text-[#00693e] font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"
+          >
+            Get in Touch
+          </Link>
         </div>
       </section>
 
@@ -304,25 +344,6 @@ export default function RichmondVAPage() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <section className="section bg-[#00693e]">
-        <div className="container-content text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Hosting an Event in Richmond?
-          </h2>
-          <p className="text-green-100 mb-8 max-w-md mx-auto text-lg">
-            Let&apos;s bring a better apparel experience to your next Richmond
-            event. Reach out early — the more lead time, the better.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-white text-[#00693e] font-semibold px-8 py-3 rounded hover:bg-gray-100 transition-colors"
-          >
-            Get in Touch
-          </Link>
         </div>
       </section>
     </>

@@ -53,20 +53,20 @@ export default function Home() {
       </section>
 
       {/* ── CUSTOMER LOGOS ── */}
-      <section className="border-b border-gray-200 py-8 bg-white overflow-hidden">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6">
+      <section className="border-b border-gray-200 py-10 bg-white overflow-hidden">
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
           Trusted By
         </p>
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...trustLogos, ...trustLogos].map((logo, i) => (
-              <div key={i} className="inline-flex items-center mx-10 shrink-0">
+              <div key={i} className="inline-flex items-center justify-center mx-12 shrink-0 h-20 w-44">
                 <Image
                   src={logo.src}
                   alt={logo.alt}
                   width={200}
                   height={80}
-                  className="h-14 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-80 transition-all duration-300"
+                  className="max-h-full max-w-full object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-90 transition-all duration-300"
                 />
               </div>
             ))}

@@ -224,64 +224,21 @@ export default function EventMerchPage() {
         </div>
       </section>
 
-      {/* ── CREDENTIALS ── */}
-      <section className="section bg-white">
-        <div className="container-content">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
-            Official Vendor
-          </p>
-          <div className="flex flex-wrap gap-8 justify-center items-center">
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/usa-gymnastics-badge.png"
-                alt="USA Gymnastics Licensed Vendor"
-                width={300}
-                height={180}
-                className="h-40 w-auto object-contain"
-              />
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/richmond-rec-badge.png"
-                alt="Richmond Parks & Recreation Official Vendor"
-                width={300}
-                height={180}
-                className="h-40 w-auto object-contain"
-              />
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
-              <Image
-                src="/lebanon-rec-logo.png"
-                alt="Lebanon Recreation Department Official Vendor"
-                width={300}
-                height={180}
-                className="h-40 w-auto object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── EVENT LOGO CAROUSEL ── */}
       <section className="border-y border-gray-200 py-12 bg-white overflow-hidden">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
-          Events We&apos;ve Worked
-        </p>
         <div className="overflow-hidden">
           <div className="animate-marquee">
             {[...eventLogos, ...eventLogos].map((logo, i) => (
               <div
                 key={i}
-                className={`inline-flex items-center justify-center mx-10 rounded-lg px-4 py-2 ${
-                  logo.dark ? "bg-gray-900" : "bg-white"
-                }`}
+                className="inline-flex items-center justify-center mx-12 shrink-0 h-28 w-52"
               >
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={200}
-                  height={100}
-                  className="h-20 w-auto object-contain"
+                  width={250}
+                  height={130}
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             ))}
@@ -301,6 +258,45 @@ export default function EventMerchPage() {
           <Link href="/contact" className="btn-primary">
             Get in Touch
           </Link>
+        </div>
+      </section>
+
+      {/* ── OFFICIAL VENDOR (subtle footer strip) ── */}
+      <section className="border-t border-gray-100 py-8 bg-gray-50">
+        <div className="container-content">
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6">
+            Official Vendor
+          </p>
+          <div className="flex flex-wrap gap-8 justify-center items-center">
+            <Image
+              src="/usa-gymnastics-badge.png"
+              alt="USA Gymnastics Licensed Vendor"
+              width={160}
+              height={80}
+              className="h-14 w-auto object-contain opacity-80"
+            />
+            <Image
+              src="/richmond-rec-badge.png"
+              alt="Richmond Parks & Recreation Official Vendor"
+              width={160}
+              height={80}
+              className="h-14 w-auto object-contain opacity-80"
+            />
+            <Image
+              src="/lebanon-rec-logo.png"
+              alt="Lebanon Recreation Department Official Vendor"
+              width={160}
+              height={80}
+              className="h-14 w-auto object-contain opacity-80"
+            />
+            <Image
+              src="/aau-badge.png"
+              alt="AAU Official Vendor"
+              width={160}
+              height={80}
+              className="h-14 w-auto object-contain opacity-80"
+            />
+          </div>
         </div>
       </section>
     </>
