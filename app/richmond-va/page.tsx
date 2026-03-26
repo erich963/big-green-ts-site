@@ -279,27 +279,13 @@ export default function RichmondVAPage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor
           </p>
-          <div className="flex items-center justify-evenly w-full">
+          <div className="flex justify-center">
             <Image
-              src="/usa-gymnastics-badge.png"
-              alt="USA Gymnastics Licensed Vendor"
-              width={280}
-              height={180}
-              className="h-44 w-auto object-contain"
-            />
-            <Image
-              src="/richmond-rec-badge.png"
-              alt="Richmond Parks & Recreation Official Vendor"
-              width={600}
-              height={450}
-              className="h-[280px] w-auto object-contain"
-            />
-            <Image
-              src="/aau-badge.png"
-              alt="AAU Official Vendor"
-              width={280}
-              height={180}
-              className="h-44 w-auto object-contain"
+              src="/official-vendor-badge.png"
+              alt="Official Vendor — USA Gymnastics, Richmond Parks & Recreation, AAU"
+              width={1200}
+              height={300}
+              className="w-full max-w-3xl h-auto object-contain"
             />
           </div>
         </div>
@@ -307,15 +293,15 @@ export default function RichmondVAPage() {
 
       {/* ── BEYOND EVENTS ── */}
       <section className="section bg-gray-50 border-t border-gray-200">
-        <div className="container-content">
+        <div className="container-content text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">
             Beyond Events
           </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl">
+          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
             We also offer custom screen printing and embroidery for
             Richmond-area businesses, organizations, and teams.
           </p>
-          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
             <div className="border border-gray-200 rounded-lg p-5 md:p-6 bg-white">
               <h3 className="font-bold text-gray-900 mb-2">Screen Printing</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">

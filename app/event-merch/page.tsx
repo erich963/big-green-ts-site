@@ -276,13 +276,6 @@ export default function EventMerchPage() {
               className="h-28 w-auto object-contain opacity-90"
             />
             <Image
-              src="/richmond-rec-badge.png"
-              alt="Richmond Parks & Recreation Official Vendor"
-              width={220}
-              height={140}
-              className="h-28 w-auto object-contain opacity-90"
-            />
-            <Image
               src="/aau-badge.png"
               alt="AAU Official Vendor"
               width={220}
