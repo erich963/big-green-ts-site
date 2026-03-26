@@ -279,28 +279,34 @@ export default function RichmondVAPage() {
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
             Official Vendor
           </p>
-          <div className="flex flex-wrap gap-10 justify-center items-center">
-            <Image
-              src="/usa-gymnastics-badge.png"
-              alt="USA Gymnastics Licensed Vendor"
-              width={280}
-              height={180}
-              className="h-44 w-auto object-contain"
-            />
-            <Image
-              src="/richmond-rec-badge.png"
-              alt="Richmond Parks & Recreation Official Vendor"
-              width={600}
-              height={450}
-              className="h-[280px] w-auto object-contain"
-            />
-            <Image
-              src="/aau-badge.png"
-              alt="AAU Official Vendor"
-              width={280}
-              height={180}
-              className="h-44 w-auto object-contain"
-            />
+          <div className="grid grid-cols-3 gap-8 items-center max-w-4xl mx-auto">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/usa-gymnastics-badge.png"
+                alt="USA Gymnastics Licensed Vendor"
+                width={280}
+                height={180}
+                className="h-44 w-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center">
+              <Image
+                src="/richmond-rec-badge.png"
+                alt="Richmond Parks & Recreation Official Vendor"
+                width={600}
+                height={450}
+                className="h-[280px] w-auto object-contain"
+              />
+            </div>
+            <div className="flex items-center justify-center">
+              <Image
+                src="/aau-badge.png"
+                alt="AAU Official Vendor"
+                width={280}
+                height={180}
+                className="h-44 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
