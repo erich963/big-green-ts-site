@@ -8,12 +8,13 @@ export const metadata: Metadata = {
     "We show up to your tournament, race, or community event with pre-printed apparel and customize it live — names, numbers, and more. Serving the Upper Valley and beyond since 1987.",
 };
 
-const trustLogos = [
-  "Rowing News",
-  "Stateline Sports",
-  "Edgewater Farm",
-  "Dartmouth College",
-  "Lebanon Recreation Department",
+const eventLogos = [
+  { src: "/event-logos/head-of-the-charles.png", alt: "Head of the Charles Regatta", dark: false },
+  { src: "/event-logos/head-of-the-hooch.png", alt: "Head of the Hooch Regatta", dark: false },
+  { src: "/event-logos/head-of-the-schuylkill.png", alt: "Head of the Schuylkill", dark: false },
+  { src: "/event-logos/saratoga-regattas.png", alt: "Saratoga Regattas", dark: false },
+  { src: "/event-logos/textile-river-regatta.png", alt: "Textile River Regatta", dark: false },
+  { src: "/event-logos/hank-tenney-classic.png", alt: "Hank Tenney Classic", dark: true },
 ];
 
 const perfectFor = [
@@ -227,47 +228,62 @@ export default function EventMerchPage() {
       <section className="section bg-white">
         <div className="container-content">
           <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
-            Official Vendor Credentials
+            Official Vendor
           </p>
           <div className="flex flex-wrap gap-8 justify-center items-center">
-            {/* USA Gymnastics — badge image */}
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 shadow-sm flex items-center justify-center">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
               <Image
                 src="/usa-gymnastics-badge.png"
                 alt="USA Gymnastics Licensed Vendor"
-                width={200}
-                height={120}
-                className="h-24 w-auto object-contain"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
               />
             </div>
-            {/* Richmond Rec — text badge */}
-            <div className="border-2 border-[#00693e] rounded-lg px-8 py-5 text-center min-w-[180px]">
-              <p className="text-[#00693e] font-bold text-sm">Richmond Recreation Department</p>
-              <p className="text-gray-500 text-xs mt-1">Official Vendor</p>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
+              <Image
+                src="/richmond-rec-badge.png"
+                alt="Richmond Parks & Recreation Official Vendor"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
+              />
             </div>
-            {/* Lebanon Rec — text badge */}
-            <div className="border-2 border-[#00693e] rounded-lg px-8 py-5 text-center min-w-[180px]">
-              <p className="text-[#00693e] font-bold text-sm">Lebanon Recreation Department</p>
-              <p className="text-gray-500 text-xs mt-1">Official Vendor</p>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm flex items-center justify-center">
+              <Image
+                src="/lebanon-rec-logo.png"
+                alt="Lebanon Recreation Department Official Vendor"
+                width={300}
+                height={180}
+                className="h-40 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── TRUST CAROUSEL ── */}
-      <section className="border-y border-gray-200 py-8 bg-gray-50 overflow-hidden">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-6">
-          Trusted By
+      {/* ── EVENT LOGO CAROUSEL ── */}
+      <section className="border-y border-gray-200 py-12 bg-white overflow-hidden">
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest text-center mb-8">
+          Events We&apos;ve Worked
         </p>
         <div className="overflow-hidden">
           <div className="animate-marquee">
-            {[...trustLogos, ...trustLogos].map((name, i) => (
-              <span
+            {[...eventLogos, ...eventLogos].map((logo, i) => (
+              <div
                 key={i}
-                className="inline-flex items-center mx-10 text-gray-400 font-semibold text-sm tracking-wide uppercase"
+                className={`inline-flex items-center justify-center mx-10 rounded-lg px-4 py-2 ${
+                  logo.dark ? "bg-gray-900" : "bg-white"
+                }`}
               >
-                {name}
-              </span>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={200}
+                  height={100}
+                  className="h-20 w-auto object-contain"
+                />
+              </div>
             ))}
           </div>
         </div>
