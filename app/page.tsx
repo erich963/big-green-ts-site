@@ -8,6 +8,10 @@ const trustLogos = [
   { src: "/dartmouth-logo.png", alt: "Dartmouth College" },
   { src: "/hanover-rec-logo.png", alt: "Hanover Parks & Recreation" },
   { src: "/stateline-sports-logo.png", alt: "Stateline Sports" },
+  { src: "/macs-maple-logo.png", alt: "Mac's Maple" },
+  { src: "/mcnamara-dairy-logo.png", alt: "McNamara Dairy" },
+  { src: "/edgewater-farm-logo.png", alt: "Edgewater Farm" },
+  { src: "/burnham-logo.png", alt: "Burnham Boatslings" },
 ];
 
 export default function Home() {
