@@ -49,29 +49,18 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 Dartmouth Roots
               </h2>
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
-                <div className="flex-1 space-y-4">
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    Brian graduated from Dartmouth College in 1986 and started
-                    Big Green T&apos;s the following year — a name that wears its
-                    roots on its sleeve.
-                  </p>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    Our name comes from our roots near Dartmouth College — and the
-                    green that&apos;s woven through everything we do. The
-                    connection to that community shaped how we think about work:
-                    do it well, stand behind it, and build something lasting.
-                  </p>
-                </div>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shrink-0 self-start">
-                  <Image
-                    src="/dartmouth-campus.jpg"
-                    alt="Dartmouth College campus"
-                    width={200}
-                    height={250}
-                    className="block"
-                  />
-                </div>
+              <div className="space-y-4">
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Brian graduated from Dartmouth College in 1986 and started
+                  Big Green T&apos;s the following year — a name that wears its
+                  roots on its sleeve.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed">
+                  Our name comes from our roots near Dartmouth College — and the
+                  green that&apos;s woven through everything we do. The
+                  connection to that community shaped how we think about work:
+                  do it well, stand behind it, and build something lasting.
+                </p>
               </div>
             </div>
 
