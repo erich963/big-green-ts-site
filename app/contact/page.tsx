@@ -200,6 +200,26 @@ export default function ContactPage() {
                   />
                 </div>
 
+                <div>
+                  <label
+                    htmlFor="artwork"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Attach artwork{" "}
+                    <span className="text-gray-400 font-normal">(optional)</span>
+                  </label>
+                  <input
+                    type="file"
+                    id="artwork"
+                    name="artwork"
+                    accept=".ai,.eps,.pdf,.png,.jpg,.jpeg,.svg,.psd"
+                    className="w-full border border-gray-300 rounded px-3 py-2.5 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-[#00693e] focus:border-transparent bg-white file:mr-3 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-medium file:bg-[#e8f5ee] file:text-[#00693e] hover:file:bg-[#d0eddd] cursor-pointer"
+                  />
+                  <p className="text-xs text-gray-400 mt-1">
+                    Accepted formats: AI, EPS, PDF, PNG, JPG, SVG, PSD
+                  </p>
+                </div>
+
                 <button
                   type="submit"
                   className="w-full btn-primary text-center"
