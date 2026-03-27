@@ -67,9 +67,9 @@ export default function AboutPage() {
                   <Image
                     src="/dartmouth-campus.jpg"
                     alt="Dartmouth College campus"
-                    width={165}
-                    height={220}
-                    className="h-[220px] w-auto object-contain block"
+                    width={200}
+                    height={250}
+                    className="block"
                   />
                 </div>
               </div>
