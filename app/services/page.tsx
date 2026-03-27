@@ -104,8 +104,63 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── DIVIDER ── */}
-      <div className="border-t border-gray-200" />
+      {/* ── CATALOGS ── */}
+      <section className="section bg-gray-50 border-y border-gray-200">
+        <div className="container-content">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+            Browse Our Supplier Catalogs
+          </h2>
+          <p className="text-gray-600 mb-8 max-w-2xl">
+            Not sure what style or garment you&apos;re looking for? Browse our
+            two primary suppliers below — then reach out and we&apos;ll help you
+            pick the right product for your order.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl">
+            <a
+              href="https://www.ssactivewear.com/catalog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white border border-gray-200 rounded-lg p-6 hover:border-[#00693e] hover:shadow-sm transition-all"
+            >
+              <p className="text-xs font-semibold text-[#00693e] uppercase tracking-widest mb-2">
+                Supplier Catalog
+              </p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00693e] transition-colors">
+                S&amp;S Activewear
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                A huge selection of blank apparel — t-shirts, hoodies, polos,
+                hats, and more from top brands like Gildan, Next Level, and
+                Port &amp; Company.
+              </p>
+              <span className="text-[#00693e] font-semibold text-sm">
+                Browse catalog &rarr;
+              </span>
+            </a>
+            <a
+              href="https://www.sanmar.com/catalog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white border border-gray-200 rounded-lg p-6 hover:border-[#00693e] hover:shadow-sm transition-all"
+            >
+              <p className="text-xs font-semibold text-[#00693e] uppercase tracking-widest mb-2">
+                Supplier Catalog
+              </p>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#00693e] transition-colors">
+                Sanmar
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Premium wholesale apparel including Port Authority, Sport-Tek,
+                District, and more — great for corporate, team, and event
+                orders.
+              </p>
+              <span className="text-[#00693e] font-semibold text-sm">
+                Browse catalog &rarr;
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* ── EMBROIDERY ── */}
       <section className="section bg-white">
