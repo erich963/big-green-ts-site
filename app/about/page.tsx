@@ -63,13 +63,13 @@ export default function AboutPage() {
                     do it well, stand behind it, and build something lasting.
                   </p>
                 </div>
-                <div className="rounded-xl overflow-hidden border border-gray-200 shrink-0">
+                <div className="rounded-xl overflow-hidden border border-gray-200 shrink-0 self-start">
                   <Image
                     src="/dartmouth-campus.jpg"
                     alt="Dartmouth College campus"
-                    width={800}
-                    height={1067}
-                    className="w-auto h-full max-h-[260px] object-contain"
+                    width={165}
+                    height={220}
+                    className="h-[220px] w-auto object-contain block"
                   />
                 </div>
               </div>
